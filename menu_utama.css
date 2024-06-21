@@ -1,0 +1,94 @@
+/* style.css */
+body {
+    background-color: #24A3D7;
+    font-family: arial;
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #24A3D7;
+    color: #020202;
+    padding: 20px;
+  }
+  
+  .logo img {
+    max-height: 30px;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin-right: 50px;
+  }
+  
+  nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .buttons {
+    display: flex;
+  }
+  
+  .register-btn,
+  .login-btn {
+    display: inline-block;
+    background-color: #5fb3dc;
+    color: #000000;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-left: 10px;
+  }
+  
+  .register-btn:hover,
+  .login-btn:hover {
+    background-color: #ccc;
+  }
+
+.hero {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.section {
+    background-color: #5BCCFA;
+    padding: 40px;
+}
+
+.section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    border: 8px solid #1c5d86;
+    padding: 20px;
+    width: 20%;
+    text-align: center;
+}
