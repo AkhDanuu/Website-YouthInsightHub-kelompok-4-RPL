@@ -17,7 +17,7 @@
           <ul>
             <li><a href="menu_utama.html">MENU UTAMA</a></li>
             <li><a href="#">VIDEO</a></li>
-            <li><a href="tampilan_podcast.html">PODCAST</a></li>
+            <li><a href="Tampilan_Podcast.php">PODCAST</a></li>
             <li><a href="#">BUKU</a></li>
             <li><a href="#">RUANG OBROLAN</a></li>
           </ul>
