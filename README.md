@@ -19,4 +19,7 @@
 - Tampilan Menu E-book (Ruzi Yandi & Meylinda )
 
 ## Tampilan Menu Login dan Register 
+![Screenshot 2024-06-22 001108](https://github.com/AkhDanuu/Website-YouthInsightHub-kelompok-4-RPL/assets/164474442/04bd2c61-f0ac-4d13-ab39-b747ea6e2466)
+
+![Screenshot 2024-06-22 001150](https://github.com/AkhDanuu/Website-YouthInsightHub-kelompok-4-RPL/assets/164474442/9762b6ff-7d75-40f4-bf2c-4b8bc318eb06)
 
