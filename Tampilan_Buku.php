@@ -11,10 +11,20 @@
 			<nav>
 				<ul>
 					<li><a href="#">Medu Utama</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Blog</a></li>
-					<li><a href="#">Contact</a></li>
-					<li><a href="#">Sign In</a></li>
+					<li><a href="#">Video</a></li>
+					<li><a href="#">Buku</a></li>
+					<li><a href="#">Podcast</a></li>
+					<li><a href="#">Ruang Obrolan</a></li>
+					<div class="search">
+					<div class="profile-icon">
+
+					</div>
+					<input type="text" id="search-input" class="search-input" placeholder="Search...">
+					<i id="search-button" class="fa fa-search" style="cursor:pointer;"></i>
+				</div>
+				<div class="profile-icon">
+					<i class="fa fa-user"></i>
+				</div>
 				</ul>
 			</nav>
 		</div>
