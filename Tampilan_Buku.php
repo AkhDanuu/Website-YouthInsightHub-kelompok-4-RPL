@@ -47,7 +47,7 @@
 					<img src="buku 3.jpg" alt="Book Cover 3">
 					<h3>Filosofi Teras</h3>
 					<p>By DR.A. Setyo Wibowo</p>
-					<button class="button">Download</button>
+					<button class="button"><a href="https://www.scribd.com/document/407689652/Filosofi-teras-pdf">Download</a></button>
 				</div>
 				<div class="book">
 					<img src="buku 4.png" alt="Book Cover 4">
@@ -59,7 +59,7 @@
 					<img src="buku 5.jpeg" alt="Book Cover 5">
 					<h3>Kamu Gak Sendiri</h3>
 					<p>By Syahid Muhammad</p>
-					<button class="button">Download</button>
+					<button class="button"><a href="https://gilispenpat.org/uploads/File-Buku/bSFkgT0a3jz7y9F0elLJH3SpsJUi9HBsxhequLP3.pdf">Download<a/></button>
 				</div>
 				<div class="book">
 					<img src="Buku 6.jpg" alt="Book Cover 6">
