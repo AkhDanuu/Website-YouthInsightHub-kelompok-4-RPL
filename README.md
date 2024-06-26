@@ -14,7 +14,8 @@
 - Tampilan Menu Utama (Zakiah)
 - Tampilan Menu chat (Yeni Silvia)
 - Tampilan Menu Podcast (Ahmad Danu Damara)
-- Tampilan Login dan Register (Fikri Ibnu Fauzan)
+- Tampilan Login dan Register & Database admin
+  (Fikri Ibnu Fauzan)
 - Tampilan Menu Video Youtube (Riski Sadewa)
 - Tampilan Menu E-book (Ruzi Yandi & Meylinda )
 
