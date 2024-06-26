@@ -1,0 +1,319 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouthInsight</title>
+    <link rel="stylesheet" href="video.css">
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #5BCCFA;
+            padding: 15px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 15px;
+        }
+        .logo {
+            font-weight: bold;
+            font-size: 24px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 15px;
+        }
+        .nav-link {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .search {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .search-input {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .profile-icon {
+            cursor: pointer;
+        }
+        main {
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .podcast-card {
+            width: calc(25% - 10px);
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            position: relative;
+        }
+        .podcast-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .podcast-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .podcast-description {
+            font-size: 14px;
+            color: #666;
+        }
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .pagination-item {
+            background-color: #ccc;
+            padding: 8px 12px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .pagination-item.active {
+            background-color: #333;
+            color: #fff;
+        }
+        .call-to-action {
+            background-color: #333;
+            color: #fff;
+            padding: 15px 30px;
+            border-radius: 10px;
+            margin-top: 20px;
+            text-align: center;
+            text-decoration: none;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .social-link {
+            color: #fff;
+            text-decoration: none;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.4);
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 700px;
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#"><img src="logo.png" alt="Featured Podcast" height="25px" width="150px"></a>
+            <div class="nav-links">
+                <a href="#" class="nav-link">MENU UTAMA</a>
+                <a href="#" class="nav-link">VIDEO</a>
+                <a href="#" class="nav-link">PODCAST</a>
+                <a href="#" class="nav-link">BUKU</a>
+                <a href="#" class="nav-link">RUANG OROLAN</a>
+            </div>
+            <div class
+            <div class="search">
+                <input type="text" id="search-input" class="search-input" placeholder="Search...">
+                <i id="search-button" class="fa fa-search" style="cursor:pointer;"></i>
+            </div>
+            <div class="profile-icon">
+                <i class="fa fa-user"></i>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="container">
+            <div class="podcast-card">
+                <a href="https://www.youtube.com/watch?v=VqY1fBptc2g"><img src="youtube1.png" alt="The Rich Roll Podcast"></a>
+                <div class="podcast-title">Kenali Pikiranmu, Kurangi Overthinking-mu</div>    
+                <div class="podcast-description">Satu Persen - Indonesian Life School</div>
+            </div>
+            <div class="podcast-card">
+                <a href="https://www.youtube.com/watch?v=1zOp8UyJp9A"><img src="youtube2.png" alt="Feel Better, Live More"></a>
+                <div class="podcast-title">Nama dan Senyum: Ternyata dua hal ini PENTING! </div>
+                <div class="podcast-description">Maudy Ayunda</div>
+            </div>
+            <div class="podcast-card">
+                <a href="https://www.youtube.com/watch?v=zC-6glEA4oU"><img src="youtube3.png" alt="Rintik Sedu"></a>
+                <div class="podcast-title">Manajemen Waktu (Bangkitkan Motivasi Produktif)</div>
+                <div class="podcast-description">Satu Persen - Indonesian Life School</div>
+            </div>
+            <div class="podcast-card">
+                <a href="https://www.youtube.com/watch?v=1UGxsCsMFQE"><img src="youtube4.png" alt="Convicted Life"></a>
+                <div class="podcast-title">Aku insecure dan overthinking </div>
+                <div class="podcast-description">Helo Bagas</div>
+            </div>
+            <div class="podcast-card">
+                <a href="https://www.youtube.com/watch?v=i7cQS2S4gXI"><img src="youtube5.png" alt="The Daily Stoic"></a>
+                <div class="podcast-title">Obat Untuk Si Overthinker</div>
+                <div class="podcast-description">1 Hari Sukses</div>
+            </div>
+            <div class="podcast-card">
+                <a href="https://www.youtube.com/watch?v=9lFu1NbgCh8"><img src="youtube6.png" alt="The Tim Ferriss Show"></a>
+                <div class="podcast-title">Ga disukai seseorang? Ingin jadi orang yang mudah disukai?</div>
+                <div class="podcast-description">Dear Aya</div>
+            </div>
+            <div class="podcast-card">
+                <a href="https://www.youtube.com/watch?v=jl52bcWzg8c"><img src="youtube7.png" alt="Pengembangan Diri"></a>
+                <div class="podcast-title">7 Kebiasaan Yang Bikin Otak Semakin Cerdas</div>
+                <div class="podcast-description">Titik Terang</div>
+            </div>
+            <div class="podcast-card">
+                <a href="https://www.youtube.com/watch?v=Pfl6MG4t5fQ"><img src="youtube8.png" alt="Hanan Attaki"></a>
+                <div class="podcast-title">Feminine Energy, Princess Treatment and Dating Advice</div>
+                <div class="podcast-description">Ferina Triananda</div>
+            </div>
+            <div class="podcast-card">
+                <a href="https://www.youtube.com/watch?v=Yqa2RvnKMok"><img src="youtube9.png" alt="The School of Greatness"></a>
+                <div class="podcast-title">Berubah Jadi Lebih Baik atau Tetap di Zona Nyaman?!</div>
+                <div class="podcast-description">Jingga'a Jive</div>
+            </div>
+            <div class="podcast-card">
+                <a href="https://www.youtube.com/watch?v=GS8SnEHbPO4"><img src="youtube10.png" alt="Huberman Lab"></a>
+                <div class="podcast-title">Ilmu Tentang Uang Yang Tidak Diajarkan Di Sekolah</div>
+                <div class="podcast-description">Kuliah Kehidupan</div>
+            </div>
+            <div class="podcast-card">
+                <a href="https://www.youtube.com/watch?v=BunatqGI45A"><img src="youtube12.png" alt="Kwik Brain with Jim Kwik"></a>
+                <div class="podcast-title">Kurangilah Segalanya Kalau Mau Sukses!</div>
+                <div class="podcast-description">Helmy Yahya Bicara</div>
+            </div>
+            <div class="podcast-card">
+                <a href="https://www.youtube.com/watch?v=3ldeB1h_ntw"><img src="youtube11.png" alt="The Friday Podcast"></a>
+                <div class="podcast-title">Kedewasaan Dalam Pikiran</div>
+                <div class="podcast-description">Henny Kristianus</div>
+            </div>
+        </section>
+        <div class="pagination">
+            <div class="pagination-item active">1</div>
+            <div class="pagination-item">2</div>
+            <div class="pagination-item">3</div>
+        </div>
+        <a href="#" class="call-to-action">Explore More Podcasts</a>
+    </main>
+    <footer>
+        <div class="logo">YouthInsight</div>
+        <p>Adalah sebuah website yang kami rancang untuk kamu yang sedang mencari motivasi dan semangat dalam menjalani hidup</p>
+        <div class="social-links">
+            <a href="#" class="social-link"><i class="fa fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="social-link"><i class="fa fa-linkedin"></i></a>
+            <a href="#" class="social-link"><i class="fa fa-twitter"></i></a>
+        </div>
+        <p>&copy; 2024 YouthInsight</p>
+    </footer>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <iframe id="modal-video" width="100%" height="400" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+    <script>
+        document.querySelectorAll('.podcast-card a').forEach(function(link) {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                var videoUrl = this.href;
+                var modal = document.getElementById('myModal');
+                var modalVideo = document.getElementById('modal-video');
+                modalVideo.src = videoUrl.replace('watch?v=', 'embed/');
+                modal.style.display = 'flex';
+            });
+        });
+
+        document.querySelector('.close').addEventListener('click', function() {
+            var modal = document.getElementById('myModal');
+            var modalVideo = document.getElementById('modal-video');
+            modal.style.display = 'none';
+            modalVideo.src = '';
+        });
+
+        window.addEventListener('click', function(event) {
+            var modal = document.getElementById('myModal');
+            var modalVideo = document.getElementById('modal-video');
+            if (event.target == modal) {
+                modal.style.display = 'none';
+                modalVideo.src = '';
+            }
+        });
+
+        document.getElementById('search-button').addEventListener('click', function() {
+            var searchInput = document.getElementById('search-input').value.toLowerCase();
+            var podcastCards = document.querySelectorAll('.podcast-card');
+
+            podcastCards.forEach(function(card) {
+                var title = card.querySelector('.podcast-title').textContent.toLowerCase();
+                var description = card.querySelector('.podcast-description').textContent.toLowerCase();
+
+                if (title.includes(searchInput) || description.includes(searchInput)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+
+        document.getElementById('search-input').addEventListener('keypress', function(event) {
+            if (event.key === 'Enter') {
+                document.getElementById('search-button').click();
+            }
+        });
+    </script>
+</body>
+</html>
