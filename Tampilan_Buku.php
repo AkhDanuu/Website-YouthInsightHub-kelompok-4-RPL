@@ -99,6 +99,28 @@
 			</div>
 		</div>
 	</footer>
+<script>
+        document.getElementById('search-button').addEventListener('click', function() {
+            var searchInput = document.getElementById('search-input').value.toLowerCase();
+            var podcastCards = document.querySelectorAll('.podcast-card');
 
+            podcastCards.forEach(function(card) {
+                var title = card.querySelector('.podcast-title').textContent.toLowerCase();
+                var description = card.querySelector('.podcast-description').textContent.toLowerCase();
+
+                if (title.includes(searchInput) || description.includes(searchInput)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+
+        document.getElementById('search-input').addEventListener('keypress', function(event) {
+            if (event.key === 'Enter') {
+                document.getElementById('search-button').click();
+            }
+        });
+    </script>
 </body>
 </html>
