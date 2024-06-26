@@ -85,6 +85,12 @@
 
 	<footer class="footer">
 		<div class="container">
+			<div class="profile-icon">
+			<div class="logo">YouthInsight</div>
+			<p>Adalah sebuah website yang kami rancang untuk kamu yang sedang mencari motivasi dan semangat dalam menjalani hidup</p>
+			<div class="social-links">
+			<a href="#" class="social-link"><i class="fa fa-istagram"></i><a></a>
+			</div>
 			<p>&copy; 2024 YouthInsight</p>
 			<div class="social-icons">
 				<a href="#"><i class="fab fa-instagram"></i></a>
